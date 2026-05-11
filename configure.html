@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Configure Axion ONE — Commissioning Studio</title>
+<meta name="description" content="Configure Axion ONE with exterior paint, interior color, and performance packages." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="grid-bg"></div>
+  <div class="streak streak-1"></div>
+  <div class="streak streak-2"></div>
+  <div class="vignette"></div>
+  <div class="stars" id="stars"></div>
+</div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<header class="nav">
+  <nav class="nav-inner glass-strong">
+    <a class="brand" href="index.html#top">
+      <span class="logo">AX</span>
+      <span class="brand-name">AXION</span>
+    </a>
+    <span class="nav-sep"></span>
+    <ul class="nav-links">
+      <li><a href="index.html#vehicle">Vehicle</a></li>
+      <li><a href="index.html#performance">Performance</a></li>
+      <li><a href="index.html#cockpit">Cockpit</a></li>
+      <li><a href="index.html#intelligence">Intelligence</a></li>
+      <li><a href="index.html#reserve">Reserve</a></li>
+    </ul>
+    <a class="btn-cta" href="configure.html">Configure</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu glass-strong" id="mobileMenu">
+    <a href="index.html#vehicle">Vehicle</a>
+    <a href="index.html#performance">Performance</a>
+    <a href="index.html#cockpit">Cockpit</a>
+    <a href="index.html#intelligence">Intelligence</a>
+    <a href="index.html#reserve">Reserve</a>
+    <a href="configure.html">Configure</a>
+  </div>
+</header>
+
+<main class="config-page">
+  <section class="config-hero">
+    <div class="container">
+      <a class="back-link" href="index.html#reserve">← Back to Axion ONE</a>
+      <div class="config-hero-grid">
+        <div>
+          <div class="eyebrow">Commissioning Studio</div>
+          <h1 class="section-title text-gradient">Configure<br/>Axion ONE.</h1>
+          <p class="section-sub max-w">Select the exterior finish, cabin atmosphere, and performance tuning for your founding-year allocation.</p>
+        </div>
+        <div class="config-hero-stats glass">
+          <div><span class="k">Base MSRP</span><strong>€2,450,000</strong></div>
+          <div><span class="k">Allocation</span><strong>47 / 99</strong></div>
+          <div><span class="k">Delivery</span><strong>Q3 2026</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="config-section">
+    <div class="container config-studio" id="configRoot" data-view="exterior">
+      <div class="config-preview glass-strong">
+        <div class="preview-top">
+          <div>
+            <div class="eyebrow">Live Build</div>
+            <h2 id="buildName">Axion ONE Aurora</h2>
+          </div>
+          <div class="build-code mono" id="buildCode">AX-ONE-00</div>
+        </div>
+        <div class="preview-stage">
+          <div class="preview-glow" id="paintGlow"></div>
+          <div class="preview-scan"></div>
+          <div class="exterior-preview">
+            <img class="config-car" src="assets/car-side.png" alt="Configured Axion ONE side profile" />
+            <div class="paint-wash" id="paintWash"></div>
+          </div>
+          <div class="interior-preview">
+            <img class="config-interior" src="assets/cockpit.jpg" alt="Configured Axion ONE interior" />
+            <div class="interior-wash" id="interiorWash"></div>
+            <div class="interior-chip glass">
+              <span>Cabin Atmosphere</span>
+              <strong id="interiorChip">Obsidian Black</strong>
+            </div>
+          </div>
+        </div>
+        <div class="preview-meta">
+          <div><span>Paint</span><strong id="summaryPaint">Aurora Silver</strong></div>
+          <div><span>Interior</span><strong id="summaryInterior">Obsidian Black</strong></div>
+          <div><span>Drive</span><strong id="summaryPackage">Grand Touring</strong></div>
+        </div>
+        <div class="price-bar">
+          <div>
+            <span>Estimated configured MSRP</span>
+            <strong id="configPrice">€2,450,000</strong>
+          </div>
+          <a class="btn-primary" href="index.html#reserve"><span>Reserve Build</span></a>
+        </div>
+      </div>
+
+      <div class="config-controls">
+        <div class="config-panel glass">
+          <div class="panel-head">
+            <span class="step mono">01</span>
+            <div>
+              <h3>Exterior Paint</h3>
+              <p>Choose the finish that defines the silhouette.</p>
+            </div>
+          </div>
+          <div class="option-grid paint-options">
+            <button class="option-card is-active" type="button" data-config-choice data-category="paint" data-label="Aurora Silver" data-price="0" data-color="#dce8f2" data-code="AS">
+              <span class="swatch" style="--swatch:#dce8f2"></span>
+              <strong>Aurora Silver</strong>
+              <small>Included</small>
+            </button>
+            <button class="option-card" type="button" data-config-choice data-category="paint" data-label="Void Black" data-price="18000" data-color="#11151d" data-code="VB">
+              <span class="swatch" style="--swatch:#11151d"></span>
+              <strong>Void Black</strong>
+              <small>+€18,000</small>
+            </button>
+            <button class="option-card" type="button" data-config-choice data-category="paint" data-label="Ion Blue" data-price="26000" data-color="#2878ff" data-code="IB">
+              <span class="swatch" style="--swatch:#2878ff"></span>
+              <strong>Ion Blue</strong>
+              <small>+€26,000</small>
+            </button>
+            <button class="option-card" type="button" data-config-choice data-category="paint" data-label="Solar Copper" data-price="32000" data-color="#b56a3c" data-code="SC">
+              <span class="swatch" style="--swatch:#b56a3c"></span>
+              <strong>Solar Copper</strong>
+              <small>+€32,000</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="config-panel glass">
+          <div class="panel-head">
+            <span class="step mono">02</span>
+            <div>
+              <h3>Interior Color</h3>
+              <p>Set the cockpit tone and material world.</p>
+            </div>
+          </div>
+          <div class="option-grid">
+            <button class="option-card is-active" type="button" data-config-choice data-category="interior" data-label="Obsidian Black" data-price="0" data-color="#111318" data-code="OB">
+              <span class="swatch split" style="--swatch:#111318;--swatch-2:#3b414c"></span>
+              <strong>Obsidian Black</strong>
+              <small>Included</small>
+            </button>
+            <button class="option-card" type="button" data-config-choice data-category="interior" data-label="Polar Graphite" data-price="12000" data-color="#c8ccd2" data-code="PG">
+              <span class="swatch split" style="--swatch:#c8ccd2;--swatch-2:#242a32"></span>
+              <strong>Polar Graphite</strong>
+              <small>+€12,000</small>
+            </button>
+            <button class="option-card" type="button" data-config-choice data-category="interior" data-label="Crimson Carbon" data-price="16000" data-color="#671f2a" data-code="CC">
+              <span class="swatch split" style="--swatch:#671f2a;--swatch-2:#111318"></span>
+              <strong>Crimson Carbon</strong>
+              <small>+€16,000</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="config-panel glass">
+          <div class="panel-head">
+            <span class="step mono">03</span>
+            <div>
+              <h3>Driving Package</h3>
+              <p>Choose the final calibration for road, range, or circuit.</p>
+            </div>
+          </div>
+          <div class="option-grid package-options">
+            <button class="option-card is-active" type="button" data-config-choice data-category="package" data-label="Grand Touring" data-price="0" data-code="GT">
+              <strong>Grand Touring</strong>
+              <small>812 km range · adaptive comfort</small>
+            </button>
+            <button class="option-card" type="button" data-config-choice data-category="package" data-label="Track Vector" data-price="64000" data-code="TV">
+              <strong>Track Vector</strong>
+              <small>Carbon brakes · circuit cooling</small>
+            </button>
+            <button class="option-card" type="button" data-config-choice data-category="package" data-label="Autobahn Aero" data-price="42000" data-code="AA">
+              <strong>Autobahn Aero</strong>
+              <small>Low-drag skin · high-speed tuning</small>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="logo">AX</span><span class="brand-name">AXION</span></div>
+      <p class="muted">Axion Mobility GmbH. Engineering the next century of motion from ateliers in Stuttgart, Modena, and Kyoto.</p>
+    </div>
+    <div>
+      <div class="footer-h">Vehicle</div>
+      <ul><li><a href="index.html#top">Axion ONE</a></li><li><a href="index.html#performance">Axion R</a></li><li><a href="system.html?slug=aero">Concept Aero</a></li><li><a href="configure.html">Build Configurator</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-h">Company</div>
+      <ul><li><a href="index.html#reserve">Atelier</a></li><li><a href="index.html#vehicle">Engineering</a></li><li><a href="index.html#cockpit">Press</a></li><li><a href="index.html#reserve">Careers</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bot">
+    <div>© 2026 Axion Mobility · All systems online</div>
+    <div class="mono">v3.0 · OS AURORA</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

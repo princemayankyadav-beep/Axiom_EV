@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Axion ONE — The Electric Hypercar of the Next Century</title>
+<meta name="description" content="Axion ONE: 1,920 hp quad-motor electric hypercar with adaptive aero, crystalline battery, and a neural drive intelligence engine." />
+<meta property="og:title" content="Axion ONE — Drive the Unwritten" />
+<meta property="og:description" content="An electric hypercar built around intelligence, motion, and emotion." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Atmosphere -->
+<div class="atmosphere" aria-hidden="true">
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="grid-bg"></div>
+  <div class="streak streak-1"></div>
+  <div class="streak streak-2"></div>
+  <div class="vignette"></div>
+  <div class="stars" id="stars"></div>
+</div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Nav -->
+<header class="nav">
+  <nav class="nav-inner glass-strong">
+    <a class="brand" href="index.html#top">
+      <span class="logo">AX</span>
+      <span class="brand-name">AXION</span>
+    </a>
+    <span class="nav-sep"></span>
+    <ul class="nav-links">
+      <li><a href="index.html#vehicle">Vehicle</a></li>
+      <li><a href="index.html#performance">Performance</a></li>
+      <li><a href="index.html#cockpit">Cockpit</a></li>
+      <li><a href="index.html#intelligence">Intelligence</a></li>
+      <li><a href="index.html#reserve">Reserve</a></li>
+    </ul>
+    <a class="btn-cta" href="configure.html">Configure</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu glass-strong" id="mobileMenu">
+    <a href="index.html#vehicle">Vehicle</a>
+    <a href="index.html#performance">Performance</a>
+    <a href="index.html#cockpit">Cockpit</a>
+    <a href="index.html#intelligence">Intelligence</a>
+    <a href="index.html#reserve">Reserve</a>
+    <a href="configure.html">Configure</a>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section id="top" class="hero">
+  <div class="hero-bg">
+    <img src="assets/hero-car.jpg" alt="Axion hypercar driving on coastal mountain road at blue hour" />
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-streaks">
+    <div class="hstreak hstreak-1"></div>
+    <div class="hstreak hstreak-2"></div>
+  </div>
+  <div class="hero-motion" aria-hidden="true">
+    <div class="hero-orbit hero-orbit-1"></div>
+    <div class="hero-orbit hero-orbit-2"></div>
+    <div class="hero-orbit hero-orbit-3"></div>
+    <div class="hero-radar"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="badge glass">
+      <span class="dot"></span>
+      Axion Aero · Generation Ⅲ
+    </div>
+    <h1 class="hero-title text-gradient">Drive the<br/>unwritten.</h1>
+    <div class="hero-row">
+      <p class="hero-sub">An electric hypercar built around a quad-motor crystalline drivetrain, adaptive aero, and an intelligence engine that learns the road with you.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#reserve"><span>Reserve Axion ONE</span></a>
+        <a class="btn-glass" href="#cockpit">Watch the film</a>
+      </div>
+    </div>
+    <div class="spec-strip glass">
+      <div><div class="k">0–100 km/h</div><div class="v text-gradient">1.74s</div></div>
+      <div><div class="k">Top Speed</div><div class="v text-gradient">412 km/h</div></div>
+      <div><div class="k">Range WLTP</div><div class="v text-gradient">812 km</div></div>
+      <div><div class="k">Power</div><div class="v text-gradient">1,920 hp</div></div>
+    </div>
+  </div>
+  <div class="scroll-ind"><span></span></div>
+</section>
+
+<!-- Vehicle / Exploded -->
+<section id="vehicle" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">§ 01 — Architecture</div>
+        <h2 class="section-title text-gradient">Engineered<br/>in layers.</h2>
+      </div>
+      <p class="section-sub">Every component of Axion ONE is a distinct intelligence — autonomous, measurable, and orchestrated in real time by the neural core.</p>
+    </div>
+
+    <div class="exploded">
+      <div class="exploded-list" id="explodedList">
+        <!-- populated by script.js -->
+      </div>
+      <div class="exploded-stage">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3 dashed"></div>
+        <div class="ring-glow-bg"></div>
+        <div class="chips" id="explodedChips"></div>
+        <img class="car-top" src="assets/car-top.png" alt="Top view of Axion hypercar" />
+        <div class="scan-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Performance -->
+<section id="performance" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">§ 02 — Performance</div>
+        <h2 class="section-title text-gradient">Quiet violence.</h2>
+      </div>
+      <p class="section-sub">1,920 horsepower. Distributed across four crystalline motors. Calibrated 4,000 times per second.</p>
+    </div>
+
+    <div class="perf-stage glass-strong">
+      <div class="road-fade"></div>
+      <div class="road-line"></div>
+      <div class="road-dashes" id="roadDashes"></div>
+      <div class="trail-glow"></div>
+      <img class="car-side" src="assets/car-side.png" alt="Axion hypercar in motion" id="carSide" />
+      <div class="hud-left glass">● LIVE TELEMETRY</div>
+      <div class="hud-right">
+        <div class="glass">SYS · ONLINE</div>
+        <div class="glass">TQ · 2,180 nm</div>
+        <div class="glass">G · 1.62</div>
+      </div>
+    </div>
+
+    <div class="perf-grid">
+      <div class="big-stat glass reveal"><div class="big-num text-gradient">1.74<span>s</span></div><div class="big-label">0–100 km/h</div></div>
+      <div class="big-stat glass reveal"><div class="big-num text-gradient">412<span>km/h</span></div><div class="big-label">Top Speed</div></div>
+      <div class="big-stat glass reveal"><div class="big-num text-gradient">1,920<span>hp</span></div><div class="big-label">Combined Output</div></div>
+      <div class="big-stat glass reveal"><div class="big-num text-gradient">1.62<span>g</span></div><div class="big-label">Lateral Grip</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Cockpit -->
+<section id="cockpit" class="section">
+  <div class="container two-col">
+    <div class="reveal">
+      <div class="eyebrow">§ 03 — Cockpit</div>
+      <h2 class="section-title text-gradient">A cabin that<br/>listens.</h2>
+      <p class="section-sub">Curved holographic instrumentation. Adaptive ambient lighting that breathes with the road. Voice-first controls and a panoramic OLED that renders the world ahead.</p>
+      <ul class="bullets">
+        <li><strong>Holographic HUD</strong><span>32:9 retinal display, 4,800 nits</span></li>
+        <li><strong>Acoustic Suite</strong><span>22 speakers, dynamic head tracking</span></li>
+        <li><strong>Climate Intelligence</strong><span>Per-seat micro-zones, AI thermal map</span></li>
+      </ul>
+    </div>
+    <div class="cockpit-vis glass-strong reveal">
+      <img src="assets/cockpit.jpg" alt="Axion ONE cockpit interior" />
+      <div class="float-chip chip-bl glass-strong">
+        <div class="chip-k">Now Playing</div>
+        <div class="chip-v">Aurora · Side B</div>
+        <div class="bars">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="float-chip chip-tr glass-strong">
+        <div class="chip-k muted">Cabin</div>
+        <div class="chip-temp text-gradient">21.5°</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Intelligence -->
+<section id="intelligence" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">§ 04 — Systems</div>
+        <h2 class="section-title text-gradient">Intelligence,<br/>everywhere.</h2>
+      </div>
+      <p class="section-sub">Open any intelligence module to see the deeper engineering story, performance metrics, and related systems on its own detail page.</p>
+    </div>
+    <div class="intelligence-showcase glass-strong reveal">
+      <div class="core-copy">
+        <div class="eyebrow">Live Neural Mesh</div>
+        <h3 class="core-title text-gradient">A moving model of road, driver, and machine.</h3>
+        <p>The intelligence core runs as a living field below the surface: reading grip, traffic, weather, driver intent, and vehicle load before every corner.</p>
+      </div>
+      <div class="neural-core" aria-hidden="true">
+        <div class="core-halo"></div>
+        <div class="core-grid"></div>
+        <div class="core-sphere"></div>
+        <div class="core-ring core-ring-1"></div>
+        <div class="core-ring core-ring-2"></div>
+        <div class="core-ring core-ring-3"></div>
+        <div class="core-nodes" id="coreNodes"></div>
+        <div class="core-pulse"></div>
+      </div>
+    </div>
+    <div class="grid-3 systems" id="systemsGrid"><!-- populated by script.js --></div>
+  </div>
+</section>
+
+<!-- Reserve -->
+<section id="reserve" class="section">
+  <div class="container">
+    <div class="reserve-card glass-strong reveal">
+      <div class="eyebrow center">First Allocation · 2026</div>
+      <h2 class="section-title text-gradient center">Reserve the<br/>first hundred.</h2>
+      <p class="section-sub center">Only 99 examples of Axion ONE will leave the atelier in the founding year. A refundable reserve secures your build slot and personal commissioning session.</p>
+      <div class="reserve-actions">
+        <a class="btn-primary" href="configure.html"><span>Configure Your Build</span></a>
+        <a class="btn-glass" href="configure.html">Reserve · €25,000</a>
+      </div>
+      <div class="reserve-meta">
+        <div><div class="k">Build</div><div class="v">Q3 2026</div></div>
+        <div><div class="k">Atelier</div><div class="v">Stuttgart · Modena</div></div>
+        <div><div class="k">Allocation</div><div class="v">47 / 99 reserved</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="logo">AX</span><span class="brand-name">AXION</span></div>
+      <p class="muted">Axion Mobility GmbH. Engineering the next century of motion from ateliers in Stuttgart, Modena, and Kyoto.</p>
+    </div>
+    <div>
+      <div class="footer-h">Vehicle</div>
+      <ul><li><a href="index.html#top">Axion ONE</a></li><li><a href="index.html#performance">Axion R</a></li><li><a href="system.html?slug=aero">Concept Aero</a></li><li><a href="configure.html">Build Configurator</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-h">Company</div>
+      <ul><li><a href="index.html#reserve">Atelier</a></li><li><a href="index.html#vehicle">Engineering</a></li><li><a href="index.html#cockpit">Press</a></li><li><a href="index.html#reserve">Careers</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bot">
+    <div>© 2026 Axion Mobility · All systems online</div>
+    <div class="mono">v3.0 · OS AURORA</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

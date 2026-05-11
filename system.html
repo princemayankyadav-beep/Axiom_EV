@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Axion ONE — System</title>
+<meta name="description" content="Explore each Axion ONE intelligence system in detail, from predictive drive AI to crystalline battery and active aero." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="grid-bg"></div>
+  <div class="vignette"></div>
+  <div class="stars" id="stars"></div>
+</div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<header class="nav">
+  <nav class="nav-inner glass-strong">
+    <a class="brand" href="index.html#top">
+      <span class="logo">AX</span>
+      <span class="brand-name">AXION</span>
+    </a>
+    <span class="nav-sep"></span>
+    <ul class="nav-links">
+      <li><a href="index.html#vehicle">Vehicle</a></li>
+      <li><a href="index.html#performance">Performance</a></li>
+      <li><a href="index.html#cockpit">Cockpit</a></li>
+      <li><a href="index.html#intelligence">Intelligence</a></li>
+      <li><a href="index.html#reserve">Reserve</a></li>
+    </ul>
+    <a class="btn-cta" href="configure.html">Configure</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu glass-strong" id="mobileMenu">
+    <a href="index.html#vehicle">Vehicle</a>
+    <a href="index.html#performance">Performance</a>
+    <a href="index.html#cockpit">Cockpit</a>
+    <a href="index.html#intelligence">Intelligence</a>
+    <a href="index.html#reserve">Reserve</a>
+    <a href="configure.html">Configure</a>
+  </div>
+</header>
+
+<main class="system-page">
+  <div class="container">
+    <a class="back-link" href="index.html#intelligence">← Back to systems</a>
+    <div id="systemRoot"></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand"><span class="logo">AX</span><span class="brand-name">AXION</span></div>
+      <p class="muted">Axion Mobility GmbH. Engineering the next century of motion from ateliers in Stuttgart, Modena, and Kyoto.</p>
+    </div>
+    <div>
+      <div class="footer-h">Vehicle</div>
+      <ul><li><a href="index.html#top">Axion ONE</a></li><li><a href="index.html#performance">Axion R</a></li><li><a href="system.html?slug=aero">Concept Aero</a></li><li><a href="configure.html">Build Configurator</a></li></ul>
+    </div>
+    <div>
+      <div class="footer-h">Company</div>
+      <ul><li><a href="index.html#reserve">Atelier</a></li><li><a href="index.html#vehicle">Engineering</a></li><li><a href="index.html#cockpit">Press</a></li><li><a href="index.html#reserve">Careers</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bot">
+    <div>© 2026 Axion Mobility · All systems online</div>
+    <div class="mono">v3.0 · OS AURORA</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>renderSystemPage();</script>
+</body>
+</html>
